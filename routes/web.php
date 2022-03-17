@@ -13,4 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//! Usando i metodi appresi oggi scrivo la Route per la "home" così
 Route::get('/', 'MovieController@home')->name('home');
+
+//! Viceversa, il collegamento per un "altra" pagina, sarà così:
+Route::get('/movies', 'MovieController@index')->name('movies.index');

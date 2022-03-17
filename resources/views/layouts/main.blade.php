@@ -14,10 +14,10 @@
     <header>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#">HOME</a>
+                <a class="nav-link" href="{{ url('/') }}">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ALL FILMS</a>
+                <a class="nav-link" href="{{ route('movies.index') }}">ALL FILMS</a>
             </li>
         </ul>
     </header>

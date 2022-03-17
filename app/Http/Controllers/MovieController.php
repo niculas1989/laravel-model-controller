@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Movie;
 
-use Illuminate\Http\Request;
-
 class MovieController extends Controller
 {
     //| Funziona per andare in Home
@@ -17,8 +15,8 @@ class MovieController extends Controller
     //| Funzione per arrivare alla lista dei Movies
     public function index()
     {
-        $movie = Movie::all();
+        $movies = Movie::all();
 
-        return view('movies.index', compact('movie'));
+        return view('movies.index', compact('movies'));
     }
 }

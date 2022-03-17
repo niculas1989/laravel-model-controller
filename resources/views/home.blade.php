@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Document</title>
-</head>
+@section('title', 'Home')
 
-<body>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">ALL FILMS</a>
-        </li>
-    </ul>
-</body>
-
-</html>
+@section('content')
+<div class="container h-100 d-flex justify-content-center align-items-center">
+    <section class="text-center h-100">
+        <h1>SEI SULLA HOME</h1>
+        <h2>Seleziona "ALL FILMS" per vedere la lista dei film presenti nel Database</h2>
+    </section>
+</div>
+@endsection

@@ -17,6 +17,8 @@ class MovieController extends Controller
     //| Funzione per arrivare alla lista dei Movies
     public function index()
     {
-        return view('movies.index');
+        $movie = Movie::all();
+
+        return view('movies.index', compact('movie'));
     }
 }
